@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./index.css">
     <style>
       @font-face {
         font-family: 'Poppins';
@@ -86,30 +86,36 @@
             <input
               class="flex w-[150px] h-[65px] text-3xl font-bold text-black pl-4 focus:bg-color-gray-500 rounded-md outline outline-gray-300 outline-1 focus:outline-2 focus:outline-gray-300"
               type="number"
+              id="daysInput"
               placeholder="DD"
             />
+            <p class="text-red-500 hidden text-sm mt-2" id="dayValidation">Day is inavlid !!</p>
           </div>
           <div class="uppercase font-semibold text-gray-500 flex-col mx-2">
             <label class="flex mb-2">M&nbsp;O&nbsp;N&nbsp;T&nbsp;H</label>
             <input
               class="flex w-[130px] h-[65px] text-3xl font-bold text-black pl-4 focus:bg-color-gray-500 rounded-md outline outline-gray-300 outline-1 focus:outline-2 focus:outline-gray-300"
               type="number"
+              id="monthsInput"
               placeholder="MM"
             />
+            <p class="text-red-500 hidden text-sm mt-2" id="monthValidation">Month is inavlid !!</p>
           </div>
           <div class="uppercase font-semibold text-gray-500 flex-col ml-2">
             <label class="flex mb-2">Y&nbsp;E&nbsp;A&nbsp;R</label>
             <input
               class="flex w-[130px] h-[65px] text-3xl font-bold text-black pl-4 focus:bg-color-gray-500 rounded-md outline outline-gray-300 outline-1 focus:outline-2 focus:outline-gray-300"
               type="number"
+              id="yearsInput"
               placeholder="YYYY"
             />
+            <p class="text-red-500 hidden text-sm mt-2" id="yearValidation">Year is inavlid !!</p>
           </div>
         </div>
 
         <div class="flex items-center justify-center">
           <div class="h-[2px] w-[510px] bg-gray-300 "></div>
-          <button class="bg-[#854ddc] rounded-full h-[90px] w-[90px] flex items-center justify-center">
+          <button class="bg-[#854ddc] rounded-full h-[90px] w-[90px] flex items-center justify-center" id="calculateButton">
             <img
               src="./assets/images/icon-arrow.svg"
               alt="Icon description"
@@ -120,16 +126,16 @@
 
           <div class="flex-col self-start ml-14 font-custom">
             <div class="flex">
-              <p class="flex text-8xl text-[#854ddc] font-bold italic">--</p>
+              <p id="yearsField" class="flex text-8xl text-[#854ddc] font-bold italic">--</p>
               <p class="ml-4  text-black font-extrabold italic	text-8xl">years</p>
             </div>
             <div class="flex">
-              <p class="text-8xl text-[#854ddc] font-bold italic">--</p>
+              <p id="monthsField" class="text-8xl text-[#854ddc] font-bold italic">--</p>
               <p class="ml-4 text-black font-extrabold italic	text-8xl">months</p>
 
             </div>
             <div class="flex">
-              <p class="text-8xl text-[#854ddc] font-bold italic">--</p>
+              <p id="daysField" class="text-8xl text-[#854ddc] font-bold italic">--</p>
               <p class="ml-4 text-black font-extrabold italic	text-8xl">days</p>
             </div>
           </div>
@@ -143,5 +149,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
+
