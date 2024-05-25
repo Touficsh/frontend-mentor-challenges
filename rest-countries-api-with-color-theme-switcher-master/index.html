@@ -23,6 +23,7 @@
   </head>
   <body class="">
     <div class="min-h-screen min-w-screen bg-[#FAFAFA] dark:bg-[#202D36]">
+      <!-- Navbar -->
       <div
         class="bg-[#FFFFFF] flex justify-between shadow-md min-w-screen h-[75px] items-center dark:bg-[#2B3743]"
       >
@@ -41,6 +42,7 @@
           </button>
         </div>
       </div>
+      <!-- Search & Filter -->
       <div class="flex justify-between mx-20 my-10">
         <div class="rounded-md p-4 bg-white w-[450px] shadow-md dark:bg-[#2B3743]">
           <i
@@ -66,6 +68,32 @@
             <option value="oceania" class="font-semibold">Oceania</option>
           </select>
         </div>
+      </div>
+      <!-- Countries -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-10 pb-10" id="dataContainer">
+         <!-- <div class="flex-col bg-white rounded-md shadow-md mx-10">
+            <img 
+              src="https://flagcdn.com/w320/lb.png"
+              height="200px"
+              class="rounded-t-md"
+              width="250px"
+            />
+            <div class="px-6 pt-6 pb-12">
+              <p class="font-bold text-md">Lebanon</p>
+              <div class="flex">
+                <p class="font-semibold text-xs mt-4">Population:</p>
+                <p class="text-xs ml-1 mt-4">6825442</p>
+              </div>
+              <div class="flex">
+                <p class="font-semibold text-xs mt-1">Region:</p>
+                <p class="text-xs ml-1 mt-1">Europe</p>
+              </div>
+              <div class="flex">
+                <p class="font-semibold text-xs mt-1">Capital:</p>
+                <p class="text-xs ml-1 mt-1">Berlin</p>
+              </div>
+            </div>
+         </div> -->
       </div>
     </div>
     <script src="index.js"></script>
