@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         div.innerHTML = `
-          <img src="${item.flag}"  class="rounded-t-md h-52" />
+          <img src="${item.flag}" class="rounded-t-md w-full h-48 object-cover	" />
           <div class="px-6 pt-6 pb-12">
             <p class="font-bold text-md dark:text-white">${item.name}</p>
             <div class="flex">
